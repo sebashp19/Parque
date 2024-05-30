@@ -17,10 +17,6 @@ public class Investigador extends Personal{
 
 	}
 
-	public void buscar_proyecto(){
-
-	}
-
    
 
     public String getTitulo() {

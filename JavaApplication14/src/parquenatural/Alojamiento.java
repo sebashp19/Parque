@@ -12,11 +12,12 @@ package parquenatural;
 public class Alojamiento {
     
 	private int capacidad;
-	private Excursion excursion;
 	private String nombre;
 	private Cliente visitantes;
+        private String valor;
+        private String categoria;
 
-	public void Alojamiento(){
+	public Alojamiento(){
 
 	}
 
@@ -28,12 +29,28 @@ public class Alojamiento {
         return capacidad;
     }
 
-    public Excursion getExcursion() {
-        return excursion;
+  
+
+    public String getValor() {
+        return valor;
+    }
+
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
   
 
+    
+    
     public Cliente getVisitantes() {
         return visitantes;
     }
@@ -46,9 +63,6 @@ public class Alojamiento {
         this.capacidad = capacidad;
     }
 
-    public void setExcursion(Excursion excursion) {
-        this.excursion = excursion;
-    }
 
    
 

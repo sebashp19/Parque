@@ -5,6 +5,8 @@
  */
 package parquenatural;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SIS
@@ -14,13 +16,13 @@ public class Parque {
 	private String inaguracion;
 	private String nombre;
 	private int numentrada;
-	private String ubicaicon;
-	public Area numarea [];
-	public Personal numpersonal [];
-	public Alojamiento numalojamiento [];
-	public Cliente cliente [];
+	private ArrayList<Region> ubicaicon;
+	private ArrayList<Area> numarea;
+	private Personal numpersonal [];
+	private ArrayList<Alojamiento> alojamientos;
+	private Cliente cliente [];
 
-	public void Parque(){
+	public Parque(){
 
 	}
 
@@ -36,23 +38,27 @@ public class Parque {
         return nombre;
     }
 
-    public Alojamiento[] getNumalojamiento() {
-        return numalojamiento;
+    public ArrayList<Alojamiento> getNumalojamiento() {
+        return alojamientos;
     }
 
     public int getNumentrada() {
         return numentrada;
     }
 
-    public Area[] getNumarea() {
+    public ArrayList<Area> getNumarea() {
+        System.err.println("LLEGO ---- " + this.numarea.size());
         return numarea;
+        //System.err.println("LLEGO " + numarea.size());
+        
+        
     }
 
     public Personal[] getNumpersonal() {
         return numpersonal;
     }
 
-    public String getUbicaicon() {
+    public ArrayList<Region> getUbicaicon() {
         return ubicaicon;
     }
 
@@ -68,12 +74,16 @@ public class Parque {
         this.nombre = nombre;
     }
 
-    public void setNumalojamiento(Alojamiento[] numalojamiento) {
-        this.numalojamiento = numalojamiento;
+    public void setAlojamiento(ArrayList<Alojamiento> alojamiento) {
+        this.alojamientos = alojamiento;
     }
 
-    public void setNumarea(Area[] numarea) {
+    public void setNumarea(ArrayList<Area> numarea) {
         this.numarea = numarea;
+    }
+    public void Area(ArrayList<Area> area) {
+        this.numarea = area;
+        
     }
 
     public void setNumentrada(int numentrada) {
@@ -84,7 +94,7 @@ public class Parque {
         this.numpersonal = numpersonal;
     }
 
-    public void setUbicaicon(String ubicaicon) {
+    public void setUbicaicon(ArrayList<Region> ubicaicon) {
         this.ubicaicon = ubicaicon;
     }
 

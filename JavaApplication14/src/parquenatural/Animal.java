@@ -12,7 +12,7 @@ package parquenatural;
 public class Animal extends Especie{
         protected String alimento;
 	protected int num;
-	protected int pericelo;
+	protected String pericelo;
 
 
 	public void animal(){
@@ -23,7 +23,7 @@ public class Animal extends Especie{
         return alimento;
     }
 
-    public int getPericelo() {
+    public String getPericelo() {
         return pericelo;
     }
 
@@ -39,7 +39,7 @@ public class Animal extends Especie{
         this.num = num;
     }
 
-    public void setPericelo(int pericelo) {
+    public void setPericelo(String pericelo) {
         this.pericelo = pericelo;
     }
         

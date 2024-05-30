@@ -15,7 +15,4 @@ public class Herbivoro extends Animal{
 	}
 
 
-	public void añade_alimento(Vegetal v){
-
-	}
 }

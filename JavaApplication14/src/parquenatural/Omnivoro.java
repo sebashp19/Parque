@@ -15,15 +15,5 @@ public class Omnivoro extends Animal{
 	}
 
 
-	public void añadir_alimento(Animal a){
-
-	}
-
-	/**
-	 * 
-	 * @param v
-	 */
-	public void añador_alimento2(Vegetal v){
-
-	}
+	
 }

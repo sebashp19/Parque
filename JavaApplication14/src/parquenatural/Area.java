@@ -5,30 +5,41 @@
  */
 package parquenatural;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SIS
  */
 public class Area {
-        private Especie especie[];
+        private ArrayList<Especie> especie;
 	private String nombre;
-	private int numespecie;
 	private float tamaño;
-	private Guardia guardia;
+	private Guardia guardia[];
 
-	public void Area(){
+	public Area(){
 
 	}
+
+    public Area(ArrayList<Especie> especie, String nombre, float tamaño, Guardia[] guardia) {
+        this.especie = especie;
+        this.nombre = nombre;
+        
+        this.tamaño = tamaño;
+        this.guardia = guardia;
+    }
+        
+        
 
 	public void añade_especie(Especie e){
 
 	}
 
-    public Especie[] getEspecie() {
+    public ArrayList<Especie> getEspecie() {
         return especie;
     }
 
-    public Guardia getGuardia() {
+    public Guardia[] getGuardia() {
         return guardia;
     }
 
@@ -36,11 +47,11 @@ public class Area {
         return nombre;
     }
 
-    public void setEspecie(Especie[] especie) {
+    public void setEspecie(ArrayList<Especie> especie) {
         this.especie = especie;
     }
 
-    public void setGuardia(Guardia guardia) {
+    public void setGuardia(Guardia[] guardia) {
         this.guardia = guardia;
     }
 
@@ -48,14 +59,7 @@ public class Area {
         this.nombre = nombre;
     }
 
-    public int getNumespecie() {
-        return numespecie;
-    }
-
-    public void setNumespecie(int numespecie) {
-        this.numespecie = numespecie;
-    }
-
+   
     public void setTamaño(float tamaño) {
         this.tamaño = tamaño;
     }

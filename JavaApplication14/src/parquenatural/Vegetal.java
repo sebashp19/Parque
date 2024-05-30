@@ -11,13 +11,25 @@ package parquenatural;
  */
 public class Vegetal extends Especie{
     private boolean floracion;
-	private int periodoflor;
+    private int periodoflor;
+    private String per_floracion;
 
 
-	public void Vegetal(){
+	public Vegetal(){
 
 	}
 
+    public String getPer_floracion() {
+        return per_floracion;
+    }
+
+    public void setPer_floracion(String per_floracion) {
+        this.per_floracion = per_floracion;
+    }
+
+        
+        
+        
     public void setFloracion(boolean floracion) {
         this.floracion = floracion;
     }
